@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
   clock_gettime(CLOCK_REALTIME, &end);
   double time_spent = (end.tv_sec - start.tv_sec) +
               (end.tv_nsec - start.tv_nsec) / BILLION;
-  printf("%f seconds to run. \n", time_spent);
+  printf("%f seconds \n", time_spent);
   cout<<"[";
   for(unsigned long i = 0; i < primes.size(); i++)
   {
