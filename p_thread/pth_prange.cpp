@@ -1,4 +1,3 @@
-//g++ -g -Wall -o pth_prange pth_prange.cpp -lpthread
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -54,7 +53,7 @@ int main(int argc, char *argv[])
   clock_gettime(CLOCK_REALTIME, &end);
   double time_spent = (end.tv_sec - start.tv_sec) +
               (end.tv_nsec - start.tv_nsec) / BILLION;
-  printf("%f seconds. \n", time_spent);
+  printf("%f seconds \n", time_spent);
   sort (primes.begin(), primes.end());
   cout<<"[";
   for(unsigned int i = 0; i < primes.size(); i++)
