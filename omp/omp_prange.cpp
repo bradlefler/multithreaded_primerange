@@ -1,4 +1,3 @@
-//Compile it using g++ omp_prange.cpp -o omp_prange -fopenmp
 #include <omp.h>
 #include <iostream>
 #include <vector>
@@ -51,7 +50,7 @@ int main(int argc, char *argv[])
   clock_gettime(CLOCK_REALTIME, &end);
   double time_spent = (end.tv_sec - start.tv_sec) +
               (end.tv_nsec - start.tv_nsec) / BILLION;
-  printf("%f\n", time_spent);
+  printf("%f seconds\n", time_spent);
   sort (primes.begin(), primes.end());
   cout<<"[";
   for(unsigned long i = 0; i < primes.size(); i++)
